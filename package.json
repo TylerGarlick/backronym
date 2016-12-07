@@ -1,0 +1,39 @@
+{
+  "name": "initialism",
+  "version": "1.0.0",
+  "description": "Generate funny names from acronyms",
+  "main": "index.js",
+  "repository": {
+    "url": "https://TylerGarlick@github.com/TylerGarlick/initialism",
+    "type": "git"
+  },
+  "scripts": {
+    "test": "ava",
+    "prepublish": "npm run build",
+    "build": "npm run build:clean && npm run build:compile",
+    "build:compile": "babel src -d dist",
+    "build:clean": "trash dist/**/*"
+  },
+  "author": "Tyler Garlick <tjgarlick@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nedb-promise": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "eslint": "^3.11.1",
+    "trash-cli": "^1.4.0"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "babel-polyfill",
+      "babel-register"
+    ]
+  }
+}

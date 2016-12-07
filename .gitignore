@@ -422,8 +422,3 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
-.eslintrc
-package.json
-src/
-test/
-yarn.lock
