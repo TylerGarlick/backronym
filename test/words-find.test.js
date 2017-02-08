@@ -1,7 +1,6 @@
 import Test from 'ava';
 import Words from '../src/words';
 
-
 Test('#find(letter) is exported', t => t.truthy(Words.find));
 
 Test('#find(letter) a letter is required', t => {
@@ -19,10 +18,10 @@ Test('#find(letter) single letter is required', t => {
 });
 
 Test('#find(letter) returns a word that starts with the letter', t => {
-  const letter = 'b';
+  const letter = 'B';
   const word = Words.find(letter);
   t.truthy(word);
-  t.truthy(word[0] === letter.toUpperCase());
+  t.truthy(word[0] === letter.toLowerCase());
 });
 
 Test('#find(letter) returns a random word', t => {
@@ -31,19 +30,3 @@ Test('#find(letter) returns a random word', t => {
   const secondWord = Words.find(letter);
   t.truthy(firstWord !== secondWord);
 });
-
-Test('#find(letter) returns a word in sentence casing', t => {
-  const letter = 'b';
-  const word = Words.find(letter);
-  t.truthy(word[0] === letter.toUpperCase());
-});
-
-Test(`#find(letter) letter's casing is ignored`, t => {
-  const letter = 'B';
-  const word = Words.find(letter);
-  t.truthy(word[0] === letter.toUpperCase());
-});
-
-
-
-

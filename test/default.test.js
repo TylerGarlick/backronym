@@ -1,16 +1,17 @@
 import Test from 'ava';
-import Initialism from '../src';
+import Backronym from '../src';
 
 
-Test('#convert(acronym) is exposed', t => t.truthy(Initialism.convert));
+Test('#create(acronym) is exposed', t => t.truthy(Backronym.create));
 
-Test('#convert(acronym) is a required parameter', t => {
+Test('#create(acronym) is a required parameter', t => {
   const error = t.throws(() => {
-    Initialism.convert();
+    Backronym.create();
   }, Error);
   
   t.is(error.message, 'Acronym is required');
 });
 
-Test('#convert(acronym) returns the result', t => t.truthy(Initialism.convert('IRS')));
+Test('#create(acronym) returns the result', t => t.truthy(Backronym.create('IRS')));
 
+console.log(Backronym.create('CIA'));

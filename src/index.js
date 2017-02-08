@@ -1,8 +1,14 @@
+import Words from './words';
+import Formatter from './formatter';
+
+
 export default {
   
-  convert(acronym = ''){
+  create(acronym = '', options = {}){
     if (!acronym) throw Error('Acronym is required');
     
-    return 'Insanely Rambunctious Snakes';
+    const words = Words.transcribe(acronym).map(word => Formatter.capitalize(word));
+    return Formatter.buildSentenceFromArray(words);
   }
+  
 };

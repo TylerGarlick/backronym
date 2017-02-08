@@ -1,10 +1,10 @@
 {
-  "name": "initialism",
+  "name": "backronym",
   "version": "1.0.0",
   "description": "Generate funny names from acronyms",
   "main": "index.js",
   "repository": {
-    "url": "https://TylerGarlick@github.com/TylerGarlick/initialism",
+    "url": "https://github.com/TylerGarlick/backronym",
     "type": "git"
   },
   "scripts": {
@@ -18,7 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "an-array-of-english-words": "^1.2.0",
-    "an-array-of-spanish-words": "^1.0.1"
+    "an-array-of-spanish-words": "^1.0.1",
+    "babel-preset-pundits": "^1.0.6"
   },
   "devDependencies": {
     "ava": "^0.17.0",
