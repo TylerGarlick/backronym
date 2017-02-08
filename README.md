@@ -28,4 +28,4 @@ const result = Backronym.create('CIA');
 * Add the ability to use our own words
 * Spanish friendly
 * Additional intelligence with the words (building better sentences)
-
+* Replace word package with: https://github.com/moos/wordpos
