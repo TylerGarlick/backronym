@@ -17,7 +17,8 @@
   "author": "Tyler Garlick <tjgarlick@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "nedb-promise": "^2.0.0"
+    "an-array-of-english-words": "^1.2.0",
+    "an-array-of-spanish-words": "^1.0.1"
   },
   "devDependencies": {
     "ava": "^0.17.0",
