@@ -18,8 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "an-array-of-english-words": "^1.2.0",
-    "an-array-of-spanish-words": "^1.0.1",
-    "babel-preset-pundits": "^1.0.6"
+    "an-array-of-spanish-words": "^1.0.1"
   },
   "devDependencies": {
     "ava": "^0.17.0",
@@ -29,7 +28,8 @@
     "babel-preset-latest": "^6.16.0",
     "babel-register": "^6.18.0",
     "eslint": "^3.11.1",
-    "trash-cli": "^1.4.0"
+    "trash-cli": "^1.4.0",
+    "babel-preset-pundits": "^1.0.6"
   },
   "ava": {
     "babel": "inherit",
