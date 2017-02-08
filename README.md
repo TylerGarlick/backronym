@@ -2,6 +2,8 @@
 
 > Generate sayings from acronyms
 
+[![Build Status](https://travis-ci.org/TylerGarlick/backronym.svg?branch=master)](https://travis-ci.org/TylerGarlick/backronym)
+
 What is a backronym? https://en.wikipedia.org/wiki/Backronym
 
 ## Installation
